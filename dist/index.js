@@ -5161,6 +5161,7 @@ async function run() {
     }
 
     // concatenate test font path argument(s)
+    const globber = await glob.create(`${fontPath}`);
     const files = await globber.glob();
     hyperglotCmd += ` ${files}`;
 
