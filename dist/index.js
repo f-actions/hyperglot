@@ -5160,8 +5160,9 @@ async function run() {
       hyperglotCmd += ` ${hyperglotArgs}`;
     }
 
-    // concatenate test font path argument
-    hyperglotCmd += ` ${fontPath}`;
+    // concatenate test font path argument(s)
+    const files = await globber.glob();
+    hyperglotCmd += ` ${files}`;
 
     // execute hyperglot
     await exec.exec(`${hyperglotCmd}`);
