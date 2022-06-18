@@ -216,7 +216,7 @@ None
 
 ## Acknowledgments
 
-This project is based on the fantastic `hyperglot` executable and Hyperglot database that is developed and maintained by the Rosetta Type Foundry and project contributors.  The `hyperglot` executable and database source are released under the GNU General Public License v3.0 and are available at https://github.com/rosettatype/hyperglot. Database documentation is available at https://github.com/rosettatype/hyperglot/blob/master/README_database.md.
+This project is based on the fantastic `hyperglot` executable and Hyperglot database that are developed and maintained by the Rosetta Type Foundry and project contributors.  The `hyperglot` executable and database source are released under the GNU General Public License v3.0 and are available at https://github.com/rosettatype/hyperglot. Database documentation is available at https://github.com/rosettatype/hyperglot/blob/master/README_database.md.
 
 ## License
 
