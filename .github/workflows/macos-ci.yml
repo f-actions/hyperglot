@@ -1,0 +1,47 @@
+name: macOS CI
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  push:
+  pull_request:
+
+jobs:
+  ci-tests:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+    name: macOS CI
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }} environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Python environment report
+        run: python -c "import sys; print(sys.version)"
+      - name: Run Single Font, Default test
+        uses: f-actions/hyperglot@main
+        with:
+          path: "tests/fonts/Roboto-Regular.ttf"
+      - name: Run Globbed Multiple Fonts, Default test
+        uses: f-actions/hyperglot@main
+        with:
+          path: "tests/fonts/*.ttf"
+      - name: Run Custom Configuration test
+        uses: f-actions/hyperglot@main
+        with:
+          path: "tests/fonts/Roboto-Regular.ttf"
+          version: "0.3.7"
+          marks: "true"
+          decomposed: "true"
+          autonyms: "true"
+          users: "true"
+          all-orthographies: "true"
+          include-historical: "true"
+          include-constructed: "true"
+          strict-iso: "true"
+          verbose: "true"
+          args: "--validity verified"
