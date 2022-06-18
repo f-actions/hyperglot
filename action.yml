@@ -1,0 +1,58 @@
+name: "Hyperglot Font Language Support Testing"
+description: "Font language support testing with the Rosetta Type Hyperglot tool"
+inputs:
+  path:
+    description: "Path to source file or directory"
+    required: true
+  version:
+    description: "The hyperglot package version (optional)"
+    required: false
+    default: "latest"
+  marks:
+    description: "Include combining marks use for a language (optional)"
+    required: false
+    default: "false"
+  decomposed:
+    description: "Language support is considered if font has all necessary base glyphs and marks, all encoded precomposed glyphs are not required (optional)"
+    required: false
+    default: "false"
+  autonyms:
+    description: "Output the language names in native language and script (optional)"
+    required: false
+    default: "false"
+  users:
+    description: "Output total estimated language user counts (optional)"
+    required: false
+    default: "false"
+  all-orthographies:
+    description: "Check all language orthographies, not just the primary one (optional)"
+    required: false
+    default: "false"
+  include-historical:
+    description: "Include languages and orthographies marked as historical (optional)"
+    required: false
+    default: "false"
+  include-constructed:
+    description: "Include languages and orthographies marked as constructed (optional)"
+    required: false
+    default: "false"
+  strict-iso:
+    description: "Display language names and macrolanguage data strictly according to ISO (optional)"
+    required: false
+    default: "false"
+  verbose:
+    description: "Display verbose output, including missing language support (optional)"
+    required: false
+    default: "false"
+  args:
+    description: "A space-delimited list of hyperglot command line options (optional)"
+    required: false
+    default: "none"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
+
+branding:
+  icon: "type"
+  color: "red"
