@@ -56,9 +56,6 @@ async function run() {
         `python -m pip install --upgrade hyperglot==${hyperglotVersion}`
       );
     }
-    // show installed hyperglot package version that will be used during the tests
-    console.log("[*] Installed hyperglot package version:");
-    await exec.exec("hyperglot --version");
 
     // compose hyperglot command for execution
     let hyperglotCmd = "hyperglot";
