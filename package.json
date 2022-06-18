@@ -1,0 +1,56 @@
+{
+  "name": "hyperglot",
+  "version": "1.0.0",
+  "description": "Hyperglot Font Language Support Testing GitHub Action",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/*.js",
+    "lint:fix": "eslint src/*.js --fix",
+    "package": "ncc build src/index.js -o dist",
+    "test": "eslint src/*.js && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-actions/hyperglot.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "font",
+    "fonts",
+    "hyperglot",
+    "language",
+    "orthography",
+    "writing"
+  ],
+  "author": "f-actions Authors",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/f-actions/hyperglot/issues"
+  },
+  "homepage": "https://github.com/f-actions/hyperglot",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/glob": "^0.3.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^28.1.1",
+    "prettier": "^1.19.1"
+  }
+}
