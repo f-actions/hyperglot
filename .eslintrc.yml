@@ -7,5 +7,4 @@ rules:
   no-console:
     - off
   quotes: 0
-  prettier/prettier:
-    - singleQuote: false
+  prettier/prettier: "error"
