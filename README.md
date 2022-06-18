@@ -126,89 +126,89 @@ The following settings are optional in `f-actions/hyperglot` configurations:
 
 Check all language orthographies, not just the primary one.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `all-orthographies: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `all-orthographies: "true"` to activate this feature.
 
 #### [`args`](#)
 
 A space-delimited list of hyperglot command line options.  This input can be used to fully specify a `hyperglot` run with supported command line options (including in place of those that are defined with other inputs or have no input configuration support).
 
-Default: `"none"`
-Options: Space separated list of command line arguments that modify `hyperglot` default behavior.  Enclose the definition in double quotes and do not include font path arguments.  Font paths should always be defined with the `paths` input field.
-Example: `args: "-d -m --validity verified"` 
+- Default: `"none"`
+- Options: Space separated list of command line arguments that modify `hyperglot` default behavior.  Enclose the definition in double quotes and do not include font path arguments.  Font paths should always be defined with the `paths` input field.
+- Example: `args: "-d -m --validity verified"` 
 
 #### [`autonyms`](#)
 
 Output the language names in native language and script.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `autonyms: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `autonyms: "true"` to activate this feature.
 
 #### [`decomposed`](#)
 
 Language support is considered if font has all necessary base glyphs and marks, all encoded precomposed glyphs are not required.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `decomposed: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `decomposed: "true"` to activate this feature.
 
 #### [`include-historical`](#)
 
 Include languages and orthographies marked as historical.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `include-historical: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `include-historical: "true"` to activate this feature.
 
 #### [`include-constructed`](#)
 
 Include languages and orthographies marked as constructed.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `include-constructed: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `include-constructed: "true"` to activate this feature.
 
 #### [`marks`](#)
 
 Include combining marks use for a language.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `marks: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `marks: "true"` to activate this feature.
 
 #### [`strict-iso`](#)
 
 Display language names and macrolanguage data strictly according to the ISO standard.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `strict-iso: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `strict-iso: "true"` to activate this feature.
 
 #### [`users`](#)
 
 Output total estimated language user counts.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `users: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `users: "true"` to activate this feature.
 
 #### [`verbose`](#)
 
 Display verbose output, including missing language support.
 
-Default: `"false"`
-Options: `["true", "false"]`
-Description: Set the definition to `verbose: "true"` to activate this feature.
+- Default: `"false"`
+- Options: `["true", "false"]`
+- Description: Set the definition to `verbose: "true"` to activate this feature.
 
 #### [`version`](#)
 
 The `hyperglot` version for testing.
 
-Default: `"latest"`
-Options: `["latest", "main", "master", [VERSION NUMBER]]`
-Description: `version: "latest"` is the latest PyPI release version, `version: "main"` and `version: "master"` both define the latest default source repository branch commit version, `version: [VERSION NUMBER]` represents the semantic version number of any PyPI release (e.g., `version: "0.3.7"`).
+- Default: `"latest"`
+- Options: `["latest", "main", "master", [VERSION NUMBER]]`
+- Description: `version: "latest"` is the latest PyPI release version, `version: "main"` and `version: "master"` both define the latest default source repository branch commit version, `version: [VERSION NUMBER]` represents the semantic version number of any PyPI release (e.g., `version: "0.3.7"`).
 
 ## Action Outputs
 
