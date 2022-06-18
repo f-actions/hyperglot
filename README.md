@@ -13,7 +13,7 @@ The project is tested against the latest GitHub Actions Linux runner environment
 
 Include the `f-actions/hyperglot` Action after you build fonts in your GitHub Actions workflow.  
 
-Define the mandatory `path` input with one or more font paths that you want to test. The `path` input accepts one or more file paths and supports globbing syntax (e.g., `path/to/*.ttf`).
+Define the mandatory `path` input with the font(s) that you want to test. The `path` input accepts one or more file paths and supports globbing syntax (e.g., `path/to/*.ttf`).
 
 ```yaml
 name: Hyperglot
