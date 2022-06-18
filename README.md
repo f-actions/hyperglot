@@ -62,7 +62,7 @@ jobs:
           python-version: "3.10"
       - name: Build fonts
         run: [YOUR BUILD COMMAND]]
-      - name: Hyperglot (default)
+      - name: Hyperglot (custom)
         uses: f-actions/hyperglot@v1
         with:
           version: "0.3.7"
@@ -94,7 +94,7 @@ jobs:
           python-version: "3.10"
       - name: Build fonts
         run: [YOUR BUILD COMMAND]]
-      - name: Hyperglot (default)
+      - name: Hyperglot (custom)
         uses: f-actions/hyperglot@v1
         with:
           version: "0.3.7"
