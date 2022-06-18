@@ -3,7 +3,7 @@
 ![Version](https://img.shields.io/github/v/release/f-actions/hyperglot?sort=semver)
 [![Linux CI](https://github.com/f-actions/hyperglot/workflows/Linux%20CI/badge.svg)](https://github.com/f-actions/hyperglot/actions?query=workflow%3A%22Linux+CI%22)
 
-This GitHub Action installs the Python [hyperglot](https://github.com/rosettatype/hyperglot) package and executes **font language support testing** based on [Hyperglot database definitions](https://github.com/rosettatype/hyperglot/blob/master/README_database.md).  hyperglot installation and execution defaults can be configured with optional Action settings.
+This GitHub Action installs the Python [hyperglot](https://github.com/rosettatype/hyperglot) package and executes **font language support testing** based on [Hyperglot database definitions](https://github.com/rosettatype/hyperglot/blob/master/README_database.md).  `hyperglot` executable installation and execution defaults can be configured with optional Action settings.
 
 The project is tested against the latest GitHub Actions Linux runner environment cPython versions 3.7 - 3.10 interpreters on a nightly basis.  We recommend use in the ubuntu-latest GitHub Actions runner environment.
 
