@@ -26,3 +26,7 @@ jobs:
         uses: f-actions/hyperglot@main
         with:
           path: "tests/fonts/Roboto-Regular.ttf"
+      - name: Run ${{ matrix.python-version }} test (globbed fonts, default)
+        uses: f-actions/hyperglot@main
+        with:
+          path: "tests/fonts/*.ttf"
