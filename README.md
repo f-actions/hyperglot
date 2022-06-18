@@ -36,7 +36,7 @@ jobs:
       - name: Hyperglot (default)
         uses: f-actions/hyperglot@v1
         with:
-          path: "[path/to/a/font.ttf]"
+          path: "path/to/a/font.ttf"
       
 ```
 
@@ -66,7 +66,7 @@ jobs:
         uses: f-actions/hyperglot@v1
         with:
           version: "0.3.7"
-          path: "[path/to/a/font.ttf]"
+          path: "path/to/a/font.ttf"
           decomposed: "true"
           include-historical: "true"
           strict-iso: "true"
@@ -98,7 +98,7 @@ jobs:
         uses: f-actions/hyperglot@v1
         with:
           version: "0.3.7"
-          path: "[path/to/a/font.ttf]"
+          path: "path/to/a/font.ttf"
           args: "-d --include-historical --strict-iso --validity verified"
 ```
 
