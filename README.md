@@ -5,7 +5,7 @@
 
 This GitHub Action installs the Python [hyperglot](https://github.com/rosettatype/hyperglot) package and executes **font language support testing** based on [Hyperglot database definitions](https://github.com/rosettatype/hyperglot/blob/master/README_database.md).  `hyperglot` executable installation and execution defaults can be configured with optional Action settings.
 
-The project is tested against the latest GitHub Actions Linux runner environment cPython versions 3.7 - 3.10 interpreters on a nightly basis.  We recommend use in the ubuntu-latest GitHub Actions runner environment.
+The project is tested against the latest GitHub Actions Linux runner environment cPython versions 3.8 - 3.11 interpreters on a nightly basis.  We recommend use in the ubuntu-latest GitHub Actions runner environment.
 
 ## Quick Start
 
@@ -30,7 +30,7 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       - name: Build fonts
         run: [YOUR BUILD COMMAND]]
       - name: Hyperglot (default)
@@ -59,7 +59,7 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       - name: Build fonts
         run: [YOUR BUILD COMMAND]]
       - name: Hyperglot (custom)
@@ -91,7 +91,7 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       - name: Build fonts
         run: [YOUR BUILD COMMAND]]
       - name: Hyperglot (custom)
