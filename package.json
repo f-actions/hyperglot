@@ -1,6 +1,6 @@
 {
   "name": "hyperglot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hyperglot Font Language Support Testing GitHub Action",
   "main": "src/index.js",
   "scripts": {
