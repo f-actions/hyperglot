@@ -44,7 +44,7 @@
     "eslint-config-wesbos": "3.2.3",
     "eslint-plugin-html": "^8.1.2",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.10.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^7.0.0",
